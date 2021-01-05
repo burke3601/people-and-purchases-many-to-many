@@ -1,1 +1,12 @@
-# people-and-purchases-many-to-many
+# People purchasing items!
+
+
+## tables
+
+- Persons
+    - name
+
+- Items
+    - name
+
+
