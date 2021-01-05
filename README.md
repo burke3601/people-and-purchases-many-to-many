@@ -92,3 +92,20 @@ static associate(models) {
       })
     }
 ```
+
+
+## Magic mehtods!
+
+You would use these in your express controller functions to efficiently get related information. You then res.render() a template that can display that information.
+
+```js
+const p = await Person.findbypk(1);
+const items = await p.getItems();
+
+// items will be an Array of Item model objects.
+// One item for every entry in the Purchases table
+// where personId is 1
+
+const i = await Item.findByPk(1);
+const people = await i.getPeople();
+```
