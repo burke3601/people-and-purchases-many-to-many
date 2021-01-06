@@ -108,4 +108,4 @@ const items = await p.getItems();
 
 const i = await Item.findByPk(1);
 const people = await i.getPeople();
-```
+``` 
